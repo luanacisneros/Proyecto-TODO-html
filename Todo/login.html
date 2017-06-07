@@ -1,62 +1,41 @@
-<html>
- 
-<head>
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Pagina web</title>
- 
-	 <style type="text/css">
-	
-		body{}
-
-	#contenedor{ 
-        width: 100%;
-        height: 100px;
-        background-color: #46d6a3;
-        margin: 0 auto 0 auto; 
-        text-align: left;
-      }
-
-    .titulo{
-      font-family: Arial;
-      font-size: 20pt;
-      color: black;
-      margin: 0 auto 0 auto;
-      }
-
-    .iniciar_sesion{
-      font-family: Arial;
-      font-size: 15pt;
-      color: black;
-      margin: 0 auto 0 auto;
-      float: left;
-      }
-
-
-    #encabezado{ height: 80px; width: 693px; margin-bottom: 70px;}
-
-    </style>
-
-</head>
- 
 <body>
  
-	<div id="contenedor">
+  <div id="contenedor">
 
-		<div class="cabecera">
+    <div class="cabecera">
+    
+    <div id="logo" class="logo">
+      <img class="logo_img" src="tarea.jpg">
+    </div>
 
-	<div id="titulo" class="titulo"><h1 style="text-align: left;">Tareas Practicas</h1>
-	</div>
+    <div id="titulo" class="titulo"><p style="text-align: center;">Tareas Practicas
+    </p></div>
+    
+    <div class="menu_sup">
+
+      <div class="op_menu_sup"><a href="file:todo.html" style="text-decoration:none">Inicio</a> </div>
+      <div class="op_menu_sup">Noticias</div>
+      <div class="op_menu_sup">Tareas</div>
+      <div class="op_menu_sup">Ayuda</div>          
+    
+    </div>
+
+    <div id="iniciar_sesion" class="iniciar_sesion">
+      <a href="login.html" 
+      style="text-decoration:none">
+      <p style="text-align: right;">Iniciar sesion</p></a>
+    </div>
+
+    </div>
 
     <div id="iniciar_sesion" class="iniciar_sesion">
       <p style="text-align: center;">Iniciar sesion</p>
-      <label>Usuario:</label>
+      <label style="float: left;"> Usuario:</label>
       <input type="name" name="text"></input>
-      <label>Contraseña:<label />
-	<input TYPE="password" name="password" type="text" id="password" />
-	<input name="submit" type="submit" value="Ingresar"><br>
-  <br><a style="font-size: 15px" href="file:///D:/CRESTA/Programacion/html/test/todo.html">Volver</a>
+      <label style="float: left;"> Contraseña:</label>
+  <input TYPE="password" name="password" type="text" id="password">
+  <a href="file:tareas.html"><input name="submit" type="submit" value="Ingresar"></a><br>
+  <br><a style="font-size: 15px" href="file:todo.html">Volver</a>
  
     </div>
  
